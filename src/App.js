@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+
+import "./App.css";
+import "react-calendar/dist/Calendar.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Session from "./Session";
+import Provider from "./Provider";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <switch>
+          <Route exact path="/session/:id">
+            <Session />
+          </Route>
+          <Route exact path="/provider">
+            <Provider />
+          </Route>
+        </switch>
+      </Router>
     </div>
   );
 }

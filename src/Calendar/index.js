@@ -4,12 +4,12 @@ import { format, addDays } from "date-fns";
 import { takeMonth } from "../utils";
 import languages from "../languages.json";
 
-import * as S from "../Header/styles";
+import * as S from "./CalendarStyles";
 
 import { CalendarHeader } from "./CalendarHeader";
-import { Box, Skeleton, Typography } from "@mui/material";
+import { Box, Skeleton } from "@mui/material";
 
-function Calendar({
+export default function Calendar({
   language,
   colorArrows,
   colorTextHeader,
@@ -226,5 +226,3 @@ function Calendar({
     </>
   );
 }
-
-export { Calendar };

@@ -1,22 +1,5 @@
 import styled from "styled-components";
 
-// interface CalendarSectionProps {
-//   backgroudColor?: string;
-//   padding?: string;
-//   borderRadius?: string;
-// }
-
-// interface MonthAndYearSectionProps {
-//   color?: string;
-//   fontWeightMonthAndYear?:
-//     | "bold"
-//     | "normal"
-//     | "bolder"
-//     | "lighter"
-//     | "initial"
-//     | "inherit";
-// }
-
 export const CalendarSection = styled.div`
   background: ${(props) => props.backgroudColor || "#FFF"};
   padding: ${(props) => props.padding || "10px"};
@@ -44,10 +27,6 @@ export const WeeksSection = styled.div`
   grid-template-columns: repeat(7, 1fr);
 `;
 
-// interface DayWeekProps {
-//   color?: string;
-// }
-
 export const DayWeek = styled.div`
   height: 16px;
   display: flex;
@@ -59,28 +38,11 @@ export const DayWeek = styled.div`
   color: ${(props) => props.color || "#000"};
 `;
 
-// interface MonthProps {
-//   BgColor?: string;
-// }
-
 export const Month = styled.div`
   margin-top: 10px;
   border-radius: 4px;
   background-color: ${(props) => props.BgColor || "#FFF"};
 `;
-
-// interface DayProps {
-//   color?: string;
-//   BgColor?: string;
-//   borderColor?: string;
-//   borderRadius?: string;
-//   height?: string;
-//   width?: string;
-//   bgColor?: string;
-//   fontWeight?: string;
-//   fontSize?: string;
-//   cursor?: string;
-// }
 
 export const Day = styled.div`
   position: relative;

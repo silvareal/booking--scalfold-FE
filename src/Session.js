@@ -1,7 +1,7 @@
 // App.js
 
 import { useEffect, useState } from "react";
-import { Calendar } from "./Calendar/Calendar";
+import Calendar from "./Calendar";
 import "./App.css";
 import { format } from "date-fns";
 import axios from "axios";
